@@ -27,8 +27,8 @@ pushd package/lean
 git clone --depth=1 -b default https://github.com/SuLingGG/default-settings
 
 # Add luci-app-ssr-plus
-git clone --depth=1 https://github.com/fw876/helloworld
-popd
+#git clone --depth=1 https://github.com/fw876/helloworld
+#popd
 
 # Clean Lean's code
 pushd package
@@ -40,8 +40,12 @@ mkdir package/community
 pushd package/community
 
 # Add Lienol's Packages
-git clone --depth=1 https://github.com/SuLingGG/openwrt-package
-rm -rf openwrt-package/lienol/luci-app-ssr-python-pro-server
+git clone --depth=1 https://github.com/Lienol/openwrt-packages
+#rm -rf openwrt-packages/lienol/luci-app-ssr-python-pro-server
+
+# Add Kenzok8 Packages
+git clone --depth=1 https://github.com/kenzok8/openwrt-packages openwrtpackages
+git clone --depth=1 https://github.com/kenzok8/small
 
 # Add mentohust & luci-app-mentohust.
 git clone --depth=1 https://github.com/BoringCat/luci-app-mentohust
@@ -69,6 +73,9 @@ cp luci-app-diskman/Parted.Makefile parted/Makefile
 
 # Add luci-theme-argon
 git clone -b 19.07_stable --depth=1 https://github.com/jerrykuku/luci-theme-argon
+
+# Add luci-theme-rosy
+git clone --depth=1 https://github.com/rosywrt/luci-theme-rosy
 
 # Add smartdns
 svn co https://github.com/pymumu/smartdns/trunk/package/openwrt ../smartdns
