@@ -23,8 +23,8 @@ cp -r {adbyby,automount,autocore,baidupcs-web,ddns-scripts_aliyun,ddns-scripts_d
 popd
 
 # Default settings
-pushd package/lean
-git clone --depth=1 -b default https://github.com/SuLingGG/default-settings
+# pushd package/lean
+# git clone --depth=1 -b default https://github.com/SuLingGG/default-settings
 
 # Add luci-app-ssr-plus
 #git clone --depth=1 https://github.com/fw876/helloworld
