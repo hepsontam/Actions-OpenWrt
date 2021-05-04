@@ -45,7 +45,7 @@ pushd package/community
 
 # Add Kenzok8 Packages
 #git clone --depth=1 https://github.com/kenzok8/openwrt-packages openwrtpackages
-#git clone --depth=1 https://github.com/kenzok8/small
+git clone --depth=1 https://github.com/kenzok8/small
 git clone --depth=1 https://github.com/garypang13/openwrt-packages openwrtpackages
 
 # Add mentohust & luci-app-mentohust.
@@ -62,7 +62,7 @@ git clone --depth=1 https://github.com/garypang13/openwrt-packages openwrtpackag
 #git clone --depth=1 https://github.com/rufengsuixing/luci-app-onliner
 
 # Add luci-app-adguardhome.
-git clone --depth=1 https://github.com/rufengsuixing/luci-app-adguardhome
+#git clone --depth=1 https://github.com/rufengsuixing/luci-app-adguardhome
 
 # Add openwrt-iptvhelper.
 #git clone --depth=1 https://github.com/riverscn/openwrt-iptvhelper
