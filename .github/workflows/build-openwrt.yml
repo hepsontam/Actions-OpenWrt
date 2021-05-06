@@ -13,11 +13,11 @@ name: Build Xiao Mi AC2100 LEDE
 on:
   repository_dispatch:
   workflow_dispatch:
-    inputs:
+    inputs: 
       ssh:
-        description: 'SSH connection to Actions'
-        required: false
-        default: 'false'
+        #description: 'SSH connection to Actions'
+        #required: false
+        #default: 'false'
 
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede
@@ -30,7 +30,7 @@ env:
   UPLOAD_FIRMWARE: true
   UPLOAD_COWTRANSFER: false
   UPLOAD_WETRANSFER: false
-  UPLOAD_RELEASE: false
+  UPLOAD_RELEASE: true
   TZ: Asia/Shanghai
 
 jobs:
