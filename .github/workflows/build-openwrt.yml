@@ -94,6 +94,8 @@ jobs:
       run: |
         cd openwrt
         make defconfig
+        wget https://github.com/coolsnowwolf/lede/pull/6526.patch
+        git apply 6526.patch
         make download -j8
         find dl -size -1024c -exec ls -l {} \;
         find dl -size -1024c -exec rm -f {} \;
