@@ -53,7 +53,7 @@ git clone --depth=1 https://github.com/garypang13/openwrt-packages openwrtpackag
 #git clone --depth=1 https://github.com/KyleRicardo/MentoHUST-OpenWrt-ipk
 
 # Add ServerChan.
-#git clone --depth=1 https://github.com/tty228/luci-app-serverchan
+git clone --depth=1 https://github.com/tty228/luci-app-serverchan
 
 # Add OpenClash.
 #git clone --depth=1 https://github.com/vernesong/OpenClash
@@ -73,7 +73,7 @@ git clone --depth=1 https://github.com/garypang13/openwrt-packages openwrtpackag
 #cp luci-app-diskman/Parted.Makefile parted/Makefile
 
 # Add luci-theme-argon
-#git clone -b 19.07_stable --depth=1 https://github.com/jerrykuku/luci-theme-argon
+git clone -b 19.07_stable --depth=1 https://github.com/jerrykuku/luci-theme-argon
 
 # Add luci-theme-rosy
 git clone --depth=1 https://github.com/rosywrt/luci-theme-rosy
