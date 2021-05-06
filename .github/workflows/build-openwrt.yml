@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: Build OpenWrt
+name: Build Xiao Mi AC2100 LEDE
 
 on:
   repository_dispatch:
