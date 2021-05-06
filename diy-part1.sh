@@ -15,4 +15,4 @@
 
 # Add a feed source
 #sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
-sed -i '$a src-git lienol https://github.com/hepsontam/luci-app-bypass' feeds.conf.default
+#sed -i '$a src-git bypass https://github.com/hepsontam/luci-app-bypass' feeds.conf.default
