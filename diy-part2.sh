@@ -65,16 +65,16 @@ git clone --depth=1 https://github.com/rosywrt/luci-theme-rosy
 git clone --depth=1 https://github.com/rosywrt/luci-theme-purple
 
 # Add tmate (lack 21.02)
-svn co https://github.com/immortalwrt/immortalwrt/tree/openwrt-19.07/package/ctcgfw/tmate
-svn co https://github.com/immortalwrt/immortalwrt/tree/openwrt-19.07/package/ctcgfw/msgpack-c
+#svn co https://github.com/immortalwrt/immortalwrt/tree/openwrt-19.07/package/ctcgfw/tmate
+#svn co https://github.com/immortalwrt/immortalwrt/tree/openwrt-19.07/package/ctcgfw/msgpack-c
 
 # Add gotop
-svn co https://github.com/immortalwrt/immortalwrt/tree/openwrt-19.07/package/ctcgfw/gotop
+#svn co https://github.com/immortalwrt/immortalwrt/tree/openwrt-19.07/package/ctcgfw/gotop
 
 # Subscribe converters
-svn co https://github.com/immortalwrt/immortalwrt/tree/openwrt-19.07/package/ctcgfw/subconverter
-svn co https://github.com/immortalwrt/immortalwrt/tree/openwrt-19.07/package/ctcgfw/jpcre2
-svn co https://github.com/immortalwrt/immortalwrt/tree/openwrt-19.07/package/ctcgfw/rapidjson
+#svn co https://github.com/immortalwrt/immortalwrt/tree/openwrt-19.07/package/ctcgfw/subconverter
+#svn co https://github.com/immortalwrt/immortalwrt/tree/openwrt-19.07/package/ctcgfw/jpcre2
+#svn co https://github.com/immortalwrt/immortalwrt/tree/openwrt-19.07/package/ctcgfw/rapidjson
 
 # Add smartdns
 svn co https://github.com/pymumu/smartdns/trunk/package/openwrt ../smartdns
