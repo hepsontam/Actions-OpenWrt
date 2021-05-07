@@ -60,10 +60,11 @@ rm -rf ../lean/luci-app-docker
 git clone --depth=1 https://github.com/jerrykuku/luci-theme-argon
 rm -rf ../lean/luci-theme-argon
 
-# Add luci-theme-rosy
+# Add luci-theme-rosy/purple
 git clone --depth=1 https://github.com/rosywrt/luci-theme-rosy
+git clone --depth=1 https://github.com/rosywrt/luci-theme-purple
 
-# Add tmate
+# Add tmate (lack 21.02)
 svn co https://github.com/immortalwrt/immortalwrt/tree/openwrt-19.07/package/ctcgfw/tmate
 svn co https://github.com/immortalwrt/immortalwrt/tree/openwrt-19.07/package/ctcgfw/msgpack-c
 
