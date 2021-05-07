@@ -1,4 +1,4 @@
-name: Build Xiao Mi AC2100 LEDE
+name: Build OpenWrt 21.02 Mi AC2100 
 
 on:
   repository_dispatch:
