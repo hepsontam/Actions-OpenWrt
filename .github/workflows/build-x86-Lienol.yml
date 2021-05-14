@@ -1,4 +1,4 @@
-name: Build OpenWrt 21.02 x86
+name: Build OpenWrt 19.07 x86
 
 on:
   repository_dispatch:
