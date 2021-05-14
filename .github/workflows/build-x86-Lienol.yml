@@ -9,7 +9,7 @@ on:
         required: true
         default: 'false'
 env:
-  REPO_URL: https://github.com/hepsontam/openwrt
+  REPO_URL: https://github.com/lienol/openwrt
   REPO_BRANCH: 19.07
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: configs/.config
