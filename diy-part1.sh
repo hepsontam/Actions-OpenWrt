@@ -12,7 +12,9 @@
 
 # Uncomment a feed source
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
+sed '2s/src/#src/g'
+# 注释掉原luci
 
 # Add a feed source
 #sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
-#sed -i '$a src-git small https://github.com/hepsontam/small' feeds.conf.default
+sed -i '$a src-git small https://github.com/hepsontam/small' feeds.conf.default
