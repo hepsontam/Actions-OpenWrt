@@ -1,4 +1,4 @@
-name: Build OpenWrt 21.02 Mi AC2100 
+name: Build LEDE Mi AC2100 
 
 on:
   repository_dispatch:
@@ -6,11 +6,11 @@ on:
     inputs:
       ssh:
         description: 'SSH connection to Actions'
-        required: false
+        required: true
         default: 'false'
 env:
-  REPO_URL: https://github.com/hepsontam/openwrt
-  REPO_BRANCH: 21.02
+  REPO_URL: https://github.com/coolsnowwolf/lede
+  REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: configs/MiAC2100.config
   DIY_P1_SH: diy-part1.sh
