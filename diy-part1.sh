@@ -18,10 +18,6 @@
 # Add a feed source
 #sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
 
-#Mi AC2100使用
-# sed -i '$a src-git small https://github.com/hepsontam/small' feeds.conf.default
-# sed -i '$a src-git openwrtpackages https://github.com/garypang13/openwrt-packages' feeds.conf.default
-
 # x86使用
 echo "src-git packages https://github.com/Lienol/openwrt-packages.git;19.07" > feeds.conf.default
 echo "src-git luci https://github.com/openwrt/luci.git;openwrt-19.07" >> feeds.conf.default
