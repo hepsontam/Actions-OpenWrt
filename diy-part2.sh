@@ -56,6 +56,17 @@ cp luci-app-diskman/Parted.Makefile parted/Makefile
 #curl -s -o ./luci-lib-docker/Makefile https://raw.githubusercontent.com/lisaac/luci-lib-docker/master/Makefile
 #rm -rf ../lean/luci-app-docker
 
+# Change the openclash
+mkdir luci-app-openclash
+cd luci-app-openclash
+git init
+git remote add -f origin https://github.com/vernesong/OpenClash.git
+git config core.sparsecheckout true
+echo "luci-app-openclash" >> .git/info/sparse-checkout
+git pull --depth 1 origin master
+git branch --set-upstream-to=origin/master master
+rm -rf ../feeds/garypang13
+
 # Add luci-theme-argon
 # git clone --depth=1 https://github.com/jerrykuku/luci-theme-argon
 # rm -rf ../lean/luci-theme-argon
