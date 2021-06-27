@@ -20,8 +20,10 @@ pushd package/community
 # Add Kenzok8 Packages?
 #git clone --depth=1 https://github.com/kenzok8/openwrt-packages openwrtpackages
 #git clone --depth=1 https://github.com/garypang13/openwrt-packages openwrtpackages
-git clone --depth=1 https://github.com/garypang13/smartdns-le
-git clone --depth=1 https://github.com/SuLingGG/default-settings
+#git clone --depth=1 https://github.com/garypang13/smartdns-le
+git clone --depth=1 https://github.com/pymumu/luci-app-smartdns.git
+git clone --depth=1 https://github.com/SuLingGG/default-settings.git
+
 # Modify bypass
 #rm -rf luci-app-bypass
 #git clone --depth=1 https://github.com/hepsontam/luci-app-bypass
