@@ -21,12 +21,15 @@ pushd package/community
 #git clone --depth=1 https://github.com/kenzok8/openwrt-packages openwrtpackages
 #git clone --depth=1 https://github.com/garypang13/openwrt-packages openwrtpackages
 #git clone --depth=1 https://github.com/garypang13/smartdns-le
-git clone --depth=1 https://github.com/pymumu/luci-app-smartdns.git
+#git clone --depth=1 https://github.com/pymumu/luci-app-smartdns.git
 git clone --depth=1 https://github.com/SuLingGG/default-settings.git
 
 # Modify bypass
 #rm -rf luci-app-bypass
 #git clone --depth=1 https://github.com/hepsontam/luci-app-bypass
+
+# Add luci-app-qBittorrent-enhanced
+git clone --depth=1 https://github.com/hyy-666/luci-app-qBittorrent-enhanced.git
 
 # Add mentohust & luci-app-mentohust.
 #git clone --depth=1 https://github.com/BoringCat/luci-app-mentohust
@@ -59,15 +62,15 @@ cp luci-app-diskman/Parted.Makefile parted/Makefile
 #rm -rf ../lean/luci-app-docker
 
 # Change the openclash
-mkdir luci-app-openclash
-cd luci-app-openclash
-git init
-git remote add -f origin https://github.com/vernesong/OpenClash.git
-git config core.sparsecheckout true
-echo "luci-app-openclash" >> .git/info/sparse-checkout
-git pull --depth 1 origin master
-git branch --set-upstream-to=origin/master master
-rm -rf ../feeds/garypang13
+#mkdir luci-app-openclash
+#cd luci-app-openclash
+#git init
+#git remote add -f origin https://github.com/vernesong/OpenClash.git
+#git config core.sparsecheckout true
+#echo "luci-app-openclash" >> .git/info/sparse-checkout
+#git pull --depth 1 origin master
+#git branch --set-upstream-to=origin/master master
+#rm -rf ../feeds/garypang13
 
 # Add luci-theme-argon
 # git clone --depth=1 https://github.com/jerrykuku/luci-theme-argon
@@ -90,8 +93,8 @@ svn co https://github.com/immortalwrt/immortalwrt/tree/openwrt-19.07/package/ctc
 svn co https://github.com/immortalwrt/immortalwrt/tree/openwrt-19.07/package/ctcgfw/rapidjson
 
 # Add smartdns
-svn co https://github.com/pymumu/smartdns/trunk/package/openwrt ../smartdns
-svn co https://github.com/project-openwrt/openwrt/trunk/package/ntlf9t/luci-app-smartdns ../luci-app-smartdns
+#svn co https://github.com/pymumu/smartdns/trunk/package/openwrt ../smartdns
+#svn co https://github.com/project-openwrt/openwrt/trunk/package/ntlf9t/luci-app-smartdns ../luci-app-smartdns
 
 # Add udptools
 git clone --depth=1 https://github.com/sensec/openwrt-udp2raw
