@@ -19,8 +19,8 @@
 #sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
 
 # x86使用
-#echo "src-git packages https://github.com/coolsnowwolf/packages.git;openwrt-19.07" > feeds.conf.default
-echo "src-git packages https://github.com/Lienol/openwrt-packages.git;19.07" > feeds.conf.default
+echo "src-git packages https://github.com/coolsnowwolf/packages.git;openwrt-19.07" > feeds.conf.default
+#echo "src-git packages https://github.com/Lienol/openwrt-packages.git;19.07" > feeds.conf.default
 echo "src-git luci https://github.com/openwrt/luci.git;openwrt-19.07" >> feeds.conf.default
 echo "src-git routing https://git.openwrt.org/feed/routing.git;openwrt-19.07" >> feeds.conf.default
 echo "src-git telephony https://git.openwrt.org/feed/telephony.git;openwrt-19.07" >> feeds.conf.default
