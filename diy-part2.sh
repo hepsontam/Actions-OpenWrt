@@ -13,6 +13,22 @@ sed -i 's/192.168.1.1/192.168.2.1/g' package/base-files/files/bin/config_generat
 #git clone --depth=1 https://github.com/fw876/helloworld
 #popd
 
+# Pull Lean's source to add docker
+cd ..
+git clone --depth=1 https://github.com/coolsnowwolf/lede.git 
+cp -rf lede/package/lean/luci-app-docker openwrt/package/lean
+cp -rf lede/package/lean/luci-lib-docker openwrt/package/lean
+cd openwrt
+
+# Delete something
+rm -rf package/feeds/garypang13/luci-app-docker
+rm -rf package/feeds/garypang13/luci-lib-docker
+rm -rf package/diy/luci-app-docker
+rm -rf package/diy/luci-lib-docker
+rm -rf package/lean/qt5 
+rm -rf package/lean/qBittorrent
+rm -rf package/lean/luci-app-qbittorrent
+
 # Clone community packages to package/community
 mkdir package/community
 pushd package/community
@@ -28,15 +44,12 @@ git clone --depth=1 https://github.com/SuLingGG/default-settings.git
 #rm -rf luci-app-bypass
 #git clone --depth=1 https://github.com/hepsontam/luci-app-bypass
 
-# Add luci-app-qBittorrent-enhanced
-git clone --depth=1 https://github.com/hyy-666/luci-app-qBittorrent-enhanced.git
-
 # Add mentohust & luci-app-mentohust.
 #git clone --depth=1 https://github.com/BoringCat/luci-app-mentohust
 #git clone --depth=1 https://github.com/KyleRicardo/MentoHUST-OpenWrt-ipk
 
 # Add ServerChan
-git clone --depth=1 https://github.com/tty228/luci-app-serverchan
+#git clone --depth=1 https://github.com/tty228/luci-app-serverchan
 
 # Add OpenClash
 #git clone --depth=1 -b master https://github.com/vernesong/OpenClash
@@ -56,10 +69,10 @@ mkdir parted
 cp luci-app-diskman/Parted.Makefile parted/Makefile
 
 # Add luci-app-dockerman
-git clone --depth=1 https://github.com/KFERMercer/luci-app-dockerman
-mkdir luci-lib-docker
-curl -s -o ./luci-lib-docker/Makefile https://raw.githubusercontent.com/lisaac/luci-lib-docker/master/Makefile
-rm -rf ../lean/luci-app-docker
+#git clone --depth=1 https://github.com/KFERMercer/luci-app-dockerman
+#mkdir luci-lib-docker
+#curl -s -o ./luci-lib-docker/Makefile https://raw.githubusercontent.com/lisaac/luci-lib-docker/master/Makefile
+#rm -rf ../lean/luci-app-docker
 
 # Change the openclash
 #mkdir luci-app-openclash
