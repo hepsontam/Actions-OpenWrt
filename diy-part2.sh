@@ -44,6 +44,9 @@ git clone --depth=1 https://github.com/SuLingGG/default-settings.git
 #rm -rf luci-app-bypass
 #git clone --depth=1 https://github.com/hepsontam/luci-app-bypass
 
+# Add qBittorrent-enhanced
+git clone --depth=1 https://github.com/hyy-666/luci-app-qBittorrent-enhanced.git
+
 # Add mentohust & luci-app-mentohust.
 #git clone --depth=1 https://github.com/BoringCat/luci-app-mentohust
 #git clone --depth=1 https://github.com/KyleRicardo/MentoHUST-OpenWrt-ipk
