@@ -13,13 +13,6 @@ sed -i 's/192.168.1.1/192.168.2.1/g' package/base-files/files/bin/config_generat
 #git clone --depth=1 https://github.com/fw876/helloworld
 #popd
 
-# Pull Lean's source to add docker
-cd ..
-git clone --depth=1 https://github.com/coolsnowwolf/lede.git 
-cp -rf lede/package/lean/luci-app-docker openwrt/package/lean
-cp -rf lede/package/lean/luci-lib-docker openwrt/package/lean
-cd openwrt
-
 # Delete something
 rm -rf package/feeds/garypang13/luci-app-docker
 rm -rf package/feeds/garypang13/luci-lib-docker
@@ -28,6 +21,18 @@ rm -rf package/diy/luci-lib-docker
 rm -rf package/lean/qt5 
 rm -rf package/lean/qBittorrent
 rm -rf package/lean/luci-app-qbittorrent
+
+# Pull Lean's source to add docker
+cd ..
+git clone --depth=1 https://github.com/coolsnowwolf/lede.git 
+cp -rf lede/package/lean/luci-app-docker openwrt/package/lean
+cp -rf lede/package/lean/luci-lib-docker openwrt/package/lean
+cp -rf lede/package/lean/qtbase openwrt/package/lean
+cp -rf lede/package/lean/qttools openwrt/package/lean
+cp -rf lede/package/lean/qBittorrent openwrt/package/lean
+cp -rf lede/package/lean/qBittorrent-static openwrt/package/lean
+cp -rf lede/package/lean/luci-app-qbittorrent openwrt/package/lean
+cd openwrt
 
 # Clone community packages to package/community
 mkdir package/community
@@ -45,7 +50,7 @@ git clone --depth=1 https://github.com/SuLingGG/default-settings.git
 #git clone --depth=1 https://github.com/hepsontam/luci-app-bypass
 
 # Add qBittorrent-enhanced
-git clone --depth=1 https://github.com/hyy-666/luci-app-qBittorrent-enhanced.git
+#git clone --depth=1 https://github.com/hyy-666/luci-app-qBittorrent-enhanced.git
 
 # Add mentohust & luci-app-mentohust.
 #git clone --depth=1 https://github.com/BoringCat/luci-app-mentohust
