@@ -14,7 +14,7 @@ sed -i 's/192.168.1.1/192.168.2.1/g' package/base-files/files/bin/config_generat
 #popd
 
 # Delete something
-rm -rf package/feeds/garypang13/luci-app-docker
+#rm -rf package/feeds/garypang13/luci-app-dockerman
 rm -rf package/feeds/garypang13/luci-lib-docker
 rm -rf package/diy/luci-app-docker
 rm -rf package/diy/luci-lib-docker
