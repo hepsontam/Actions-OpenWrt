@@ -30,7 +30,7 @@ cp -rf lede/package/lean/luci-lib-docker openwrt/package/lean
 cp -rf lede/package/lean/qtbase openwrt/package/lean
 cp -rf lede/package/lean/qttools openwrt/package/lean
 cp -rf lede/package/lean/qBittorrent openwrt/package/lean
-cp -rf lede/package/lean/qBittorrent-static openwrt/package/lean
+#cp -rf lede/package/lean/qBittorrent-static openwrt/package/lean
 cp -rf lede/package/lean/luci-app-qbittorrent openwrt/package/lean
 cd openwrt
 
@@ -146,7 +146,7 @@ sed -i 's/16384/65536/g' package/kernel/linux/files/sysctl-nf-conntrack.conf
 #sed -i 's/odhcpd-ipv6only odhcp6c //g' include/target.mk
 
 # Change dnsmasq to dnsmasq-full
-sed -i 's/dnsmasq i/dnsmasq-full i/g' include/target.mk
+#sed -i 's/dnsmasq i/dnsmasq-full i/g' include/target.mk
 
 # Convert Translation
 #cp ../scripts/convert-translation.sh .
